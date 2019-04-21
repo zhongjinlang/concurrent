@@ -1,4 +1,4 @@
-package com.zhongjinlang.concurrent;
+package com.zhongjinlang;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

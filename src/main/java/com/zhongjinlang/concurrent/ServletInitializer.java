@@ -1,5 +1,6 @@
 package com.zhongjinlang.concurrent;
 
+import com.zhongjinlang.ConcurrentApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
