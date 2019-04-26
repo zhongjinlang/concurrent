@@ -1,5 +1,6 @@
 package com.zhongjinlang.example.aqs;
 
+import com.zhongjinlang.example.publish.Escape;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.*;
@@ -25,6 +26,7 @@ public class FutureExample {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         // 获取线程结果
         ExecutorService exec= Executors.newCachedThreadPool();
+
         // 提交任务 获取结果
         Future<String> future = exec.submit(new MyCallable());
         log.info("do something in main");
@@ -33,6 +35,5 @@ public class FutureExample {
         // 阻塞
         String result = future.get();
         log.info("result: {}", result);
-
     }
 }
